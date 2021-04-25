@@ -1,0 +1,151 @@
+2021-04-24 17:38:52,912 ERROR: Exception on /edit_profile [POST] [in e:\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "e:\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "e:\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "E:\microblog\venv\app\routes.py", line 92, in edit_profile
+    db.session.commit()
+  File "<string>", line 2, in commit
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1423, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3255, in flush
+    self._flush(objects)
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3395, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\util\compat.py", line 211, in raise_
+    raise exception
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3355, in _flush
+    flush_context.execute()
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 453, in execute
+    rec.execute(self)
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 627, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 234, in save_obj
+    _emit_update_statements(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 998, in _emit_update_statements
+    c = connection._execute_20(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1520, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 313, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1389, in _execute_clauseelement
+    ret = self._execute_context(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\util\compat.py", line 211, in raise_
+    raise exception
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.username
+[SQL: UPDATE user SET username=?, about_me=? WHERE user.id = ?]
+[parameters: ('susan', 'Hi Every one my name is John I was a dummy name created by Aditya, he is a Software Developer.\r\nThank you very much.', 2)]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+2021-04-24 17:41:35,440 INFO: Microblog startup [in E:\microblog\venv\app\__init__.py:43]
+2021-04-24 17:42:18,601 ERROR: Exception on /edit_profile [POST] [in e:\microblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "e:\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "e:\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "e:\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "e:\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "e:\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "e:\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "E:\microblog\venv\app\routes.py", line 92, in edit_profile
+    db.session.commit()
+  File "<string>", line 2, in commit
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1423, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3255, in flush
+    self._flush(objects)
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3395, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\util\compat.py", line 211, in raise_
+    raise exception
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\session.py", line 3355, in _flush
+    flush_context.execute()
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 453, in execute
+    rec.execute(self)
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 627, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 234, in save_obj
+    _emit_update_statements(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\orm\persistence.py", line 998, in _emit_update_statements
+    c = connection._execute_20(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1520, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 313, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1389, in _execute_clauseelement
+    ret = self._execute_context(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\util\compat.py", line 211, in raise_
+    raise exception
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "e:\microblog\venv\lib\site-packages\sqlalchemy\engine\default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.username
+[SQL: UPDATE user SET username=?, about_me=? WHERE user.id = ?]
+[parameters: ('susan', 'Hi Every one my name is John I was a dummy name created by Aditya, he is a Software Developer.\r\nThank you very much.', 2)]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+2021-04-24 17:47:01,737 INFO: Microblog startup [in E:\microblog\venv\app\__init__.py:43]
+2021-04-24 17:55:34,069 INFO: Microblog startup [in E:\microblog\venv\app\__init__.py:44]
+2021-04-24 21:33:37,980 INFO: Microblog startup [in E:\microblog\venv\app\__init__.py:44]
+2021-04-24 21:34:12,060 INFO: Microblog startup [in E:\microblog\venv\app\__init__.py:44]
+2021-04-24 23:14:22,706 INFO: Microblog startup [in E:\microblog\venv\app\__init__.py:44]
+2021-04-25 02:09:49,976 INFO: Microblog startup [in E:\microblog\venv\app\__init__.py:44]
