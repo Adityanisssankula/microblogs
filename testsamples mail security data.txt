@@ -1,7 +1,7 @@
 Firstname:Test
 Lastname:Samples
-Username:ts745564@gmail.com
-password:15761A1236@HiAditya#!
+Username:
+password:
 
 Users of the Application:
 username:susan
