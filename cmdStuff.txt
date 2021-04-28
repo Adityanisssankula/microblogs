@@ -16997,3 +16997,444 @@ E:\microblog>git remote add origin https://github.com/Adityanisssankula/microblo
 
 E:\microblog>git push -u origin master
 info: please complete authentication in your browser...
+_______________________________________________________________________________________________________________________________________________________________________
+Microsoft Windows [Version 10.0.18362.900]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\Aditya>color a
+
+C:\Users\Aditya>heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/44895744-eef2-4439-ae3b-713247b52c6f?requestor=SFMyNTY.g2gDbQAAAAwxODMuODIuMTUzLjVuBgBMe2MSeQFiAAFRgA.5mAT0KaiabJzEQrKldzSHo_-FrGk4YnjniUANjR6zEY
+Logging in... done
+Logged in as adityanissankula@gmail.com
+
+C:\Users\Aditya>color a
+
+C:\Users\Aditya>heroku
+CLI to interact with Heroku
+
+VERSION
+  heroku/7.52.0 win32-x64 node-v12.21.0
+
+USAGE
+  $ heroku [COMMAND]
+
+COMMANDS
+  access          manage user access to apps
+  addons          tools and services for developing, extending, and operating your
+                  app
+  apps            manage apps on Heroku
+  auth            check 2fa status
+  authorizations  OAuth authorizations
+  autocomplete    display autocomplete installation instructions
+  buildpacks      scripts used to compile apps
+  certs           a topic for the ssl plugin
+  ci              run an application test suite on Heroku
+  clients         OAuth clients on the platform
+  config          environment variables of apps
+  container       Use containers to build and deploy Heroku apps
+  domains         custom domains for apps
+  drains          forward logs to syslog or HTTPS
+  features        add/remove app features
+  git             manage local git repository for app
+  help            display help for heroku
+  keys            add/remove account ssh keys
+  labs            add/remove experimental features
+  local           run Heroku app locally
+  logs            display recent log output
+  maintenance     enable/disable access to app
+  members         manage organization members
+  notifications   display notifications
+  orgs            manage organizations
+  pg              manage postgresql databases
+  pipelines       manage pipelines
+  plugins         list installed plugins
+  ps              Client tools for Heroku Exec
+  psql            open a psql shell to the database
+  redis           manage heroku redis instances
+  regions         list available regions for deployment
+  releases        display the releases for an app
+  reviewapps      manage reviewapps in pipelines
+  run             run a one-off process inside a Heroku dyno
+  sessions        OAuth sessions
+  spaces          manage heroku private spaces
+  status          status of the Heroku platform
+  teams           manage teams
+  update          update the Heroku CLI
+  webhooks        list webhooks on an app
+
+
+C:\Users\Aditya>E:
+
+E:\>cd microblog
+
+E:\microblog>venv\Scripts\activate
+
+(venv) E:\microblog>dir
+ Volume in drive E is kali
+ Volume Serial Number is 82B7-F9B3
+
+ Directory of E:\microblog
+
+26-04-2021  04:27    <DIR>          .
+26-04-2021  04:27    <DIR>          ..
+27-04-2021  13:41    <DIR>          .idea
+26-04-2021  04:20         1,163,647 cmdStuff.txt
+25-04-2021  04:37            14,259 testsamples mail security data.txt
+26-04-2021  01:26    <DIR>          venv
+19-04-2021  20:39    <DIR>          __pycache__
+               2 File(s)      1,177,906 bytes
+               5 Dir(s)  28,204,015,616 bytes free
+
+(venv) E:\microblog>cd venv
+
+(venv) E:\microblog\venv>dir
+ Volume in drive E is kali
+ Volume Serial Number is 82B7-F9B3
+
+ Directory of E:\microblog\venv
+
+26-04-2021  01:26    <DIR>          .
+26-04-2021  01:26    <DIR>          ..
+26-04-2021  00:37    <DIR>          app
+26-04-2021  01:26            36,864 app.db
+25-04-2021  23:47               105 babel.cfg
+26-04-2021  01:15               901 config.py
+21-04-2021  14:33    <DIR>          Include
+19-04-2021  19:13    <DIR>          Lib
+25-04-2021  17:27    <DIR>          logs
+26-04-2021  01:16               223 microblog.py
+21-04-2021  16:55    <DIR>          migrations
+19-04-2021  19:13                82 pyvenv.cfg
+26-04-2021  00:26               705 requirements.txt
+25-04-2021  23:48    <DIR>          Scripts
+26-04-2021  01:17             3,642 tests.py
+26-04-2021  01:17    <DIR>          __pycache__
+               7 File(s)         42,522 bytes
+               9 Dir(s)  28,204,015,616 bytes free
+
+(venv) E:\microblog\venv>set FLASK_APP=microblog.py
+
+(venv) E:\microblog\venv>flask run
+ * Serving Flask app "microblog.py"
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+[2021-04-27 13:46:10,094] INFO in __init__: Microblog startup
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [27/Apr/2021 13:46:33] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [27/Apr/2021 13:46:33] "[37mGET /auth/login?next=%2F HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Apr/2021 13:46:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+
+(venv) E:\microblog\venv>set FLASK_APP=microblog.py
+
+(venv) E:\microblog\venv>flask run
+ * Serving Flask app "microblog.py"
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+[2021-04-27 16:08:40,068] INFO in __init__: Microblog startup
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [27/Apr/2021 16:08:59] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [27/Apr/2021 16:08:59] "[37mGET /auth/login?next=%2F HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Apr/2021 16:09:08] "[32mPOST /auth/login?next=%2F HTTP/1.1[0m" 302 -
+127.0.0.1 - - [27/Apr/2021 16:09:08] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Apr/2021 16:09:19] "[37mGET /user/susan HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Apr/2021 16:09:31] "[37mGET /index HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Apr/2021 16:09:44] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [27/Apr/2021 16:09:44] "[32mGET /index HTTP/1.1[0m" 302 -
+127.0.0.1 - - [27/Apr/2021 16:09:44] "[37mGET /auth/login?next=%2Findex HTTP/1.1[0m" 200 -
+
+(venv) E:\microblog\venv>heroku login
+heroku: Press any key to open up the browser to login or q to exit: C:\Program Files\heroku\client\node_modules\cli-ux\node_modules\@oclif\errors\lib\index.js:42
+        throw err;
+        ^
+
+CLIError: timed out
+    at Object.error (C:\Program Files\heroku\client\node_modules\cli-ux\node_modules\@oclif\errors\lib\index.js:26:15)
+    at Timeout._onTimeout (C:\Program Files\heroku\client\node_modules\@heroku-cli\command\lib\login.js:27:38)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7) {
+  oclif: { exit: 2 },
+  code: undefined
+}
+
+(venv) E:\microblog\venv>heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/58b8d681-c202-4b19-9bcf-76ebea655de0?requestor=SFMyNTY.g2gDbQAAAAwxODMuODIuMTUzLjVuBgB-UAsTeQFiAAFRgA.p5eTChFsWUYMnFy9XKSLuqUv1IuqS3P8JLHKJYsPfik
+Logging in... done
+Logged in as adityanissankula@gmail.com
+
+(venv) E:\microblog\venv>heroku apps:create flask-microblogs
+Creating ⬢ flask-microblogs... !
+ !    Name flask-microblogs is already taken
+
+(venv) E:\microblog\venv>heroku apps:create flask-microblog
+Creating ⬢ flask-microblog... !
+ !    Name flask-microblog is already taken
+
+(venv) E:\microblog\venv>heroku apps:create flask-micro
+Creating ⬢ flask-micro... !
+ !    Name flask-micro is already taken
+
+(venv) E:\microblog\venv>heroku apps:create flask-mymicroblog
+Creating ⬢ flask-mymicroblog... !
+ !    Name flask-mymicroblog is already taken
+
+(venv) E:\microblog\venv>git clone https://github.com/Adityanisssankula/microblogs/tree/master
+Cloning into 'master'...
+fatal: repository 'https://github.com/Adityanisssankula/microblogs/tree/master/' not found
+
+(venv) E:\microblog\venv>git clone https://github.com/Adityanisssankula/microblogs
+Cloning into 'microblogs'...
+remote: Enumerating objects: 5078, done.
+remote: Counting objects: 100% (5078/5078), done.
+remote: Compressing objects: 100% (3913/3913), done.
+Creating ⬢ myfirstflask-microblog... done
+https://myfirstflask-microblog.herokuapp.com/ | https://git.heroku.com/myfirstflask-microblog.gitas: 100% (1064/1064), done.
+
+(venv) E:\microblog\venv>git remote -v
+origin  https://github.com/Adityanisssankula/microblogs (fetch)
+origin  https://github.com/Adityanisssankula/microblogs (push)
+
+(venv) E:\microblog\venv>heroku addons:add heroku-postgresql:hobby-dev
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+ »   See more help with --help
+
+(venv) E:\microblog\venv>heroku addons:add heroku-postgresql:hobby-dev
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+ »   See more help with --help
+
+(venv) E:\microblog\venv>heroku help
+CLI to interact with Heroku
+
+VERSION
+  heroku/7.52.0 win32-x64 node-v12.21.0
+
+USAGE
+  $ heroku [COMMAND]
+
+COMMANDS
+  access          manage user access to apps
+  addons          tools and services for developing, extending, and operating your
+                  app
+  apps            manage apps on Heroku
+  auth            check 2fa status
+  authorizations  OAuth authorizations
+  autocomplete    display autocomplete installation instructions
+  buildpacks      scripts used to compile apps
+  certs           a topic for the ssl plugin
+  ci              run an application test suite on Heroku
+  clients         OAuth clients on the platform
+  config          environment variables of apps
+  container       Use containers to build and deploy Heroku apps
+  domains         custom domains for apps
+  drains          forward logs to syslog or HTTPS
+  features        add/remove app features
+  git             manage local git repository for app
+  help            display help for heroku
+  keys            add/remove account ssh keys
+  labs            add/remove experimental features
+  local           run Heroku app locally
+  logs            display recent log output
+  maintenance     enable/disable access to app
+  members         manage organization members
+  notifications   display notifications
+  orgs            manage organizations
+  pg              manage postgresql databases
+  pipelines       manage pipelines
+  plugins         list installed plugins
+  ps              Client tools for Heroku Exec
+  psql            open a psql shell to the database
+  redis           manage heroku redis instances
+  regions         list available regions for deployment
+  releases        display the releases for an app
+  reviewapps      manage reviewapps in pipelines
+  run             run a one-off process inside a Heroku dyno
+  sessions        OAuth sessions
+  spaces          manage heroku private spaces
+  status          status of the Heroku platform
+  teams           manage teams
+  update          update the Heroku CLI
+  webhooks        list webhooks on an app
+
+
+(venv) E:\microblog\venv>heroku addons:add heroku-postgresql:hobby-dev
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+ »   See more help with --help
+
+(venv) E:\microblog\venv>addons:add heroku-postgresql:hobby-dev
+The filename, directory name, or volume label syntax is incorrect.
+
+(venv) E:\microblog\venv>heroku config:set LOG_TO_STDOUT=1
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+ »   See more help with --help
+
+(venv) E:\microblog\venv>python config.py
+
+(venv) E:\microblog\venv>add heroku-postgresql:hobby-dev
+'add' is not recognized as an internal or external command,
+operable program or batch file.
+
+(venv) E:\microblog\venv>add heroku-postgresql:hobby-dev
+'add' is not recognized as an internal or external command,
+operable program or batch file.
+
+(venv) E:\microblog\venv>set LOG_TO_STDOUT=1
+
+(venv) E:\microblog\venv>flask translate compile
+[2021-04-27 20:26:11,680] INFO in __init__: Microblog startup
+Microblog startup
+Traceback (most recent call last):
+  File "E:\Anaconda3\setup\lib\runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "E:\Anaconda3\setup\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "E:\microblog\venv\Scripts\pybabel.exe\__main__.py", line 7, in <module>
+  File "e:\microblog\venv\lib\site-packages\babel\messages\frontend.py", line 929, in main
+    return CommandLineInterface().run(sys.argv)
+  File "e:\microblog\venv\lib\site-packages\babel\messages\frontend.py", line 853, in run
+    return cmdinst.run()
+  File "e:\microblog\venv\lib\site-packages\babel\messages\frontend.py", line 187, in run
+    for catalog, errors in self._run_domain(domain).items():
+  File "e:\microblog\venv\lib\site-packages\babel\messages\frontend.py", line 225, in _run_domain
+    raise DistutilsOptionError('no message catalogs found')
+distutils.errors.DistutilsOptionError: no message catalogs found
+Traceback (most recent call last):
+  File "E:\Anaconda3\setup\lib\runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "E:\Anaconda3\setup\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "E:\microblog\venv\Scripts\flask.exe\__main__.py", line 7, in <module>
+  File "e:\microblog\venv\lib\site-packages\flask\cli.py", line 967, in main
+    cli.main(args=sys.argv[1:], prog_name="python -m flask" if as_module else None)
+  File "e:\microblog\venv\lib\site-packages\flask\cli.py", line 586, in main
+    return super(FlaskGroup, self).main(*args, **kwargs)
+  File "e:\microblog\venv\lib\site-packages\click\core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "e:\microblog\venv\lib\site-packages\click\core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "e:\microblog\venv\lib\site-packages\click\core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "e:\microblog\venv\lib\site-packages\click\core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "e:\microblog\venv\lib\site-packages\click\core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "e:\microblog\venv\lib\site-packages\click\decorators.py", line 21, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "e:\microblog\venv\lib\site-packages\flask\cli.py", line 426, in decorator
+    return __ctx.invoke(f, *args, **kwargs)
+  File "e:\microblog\venv\lib\site-packages\click\core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "E:\microblog\venv\app\cli.py", line 35, in compile
+    raise RuntimeError('compile command failed')
+RuntimeError: compile command failed
+
+(venv) E:\microblog\venv>flask translate compile
+[2021-04-27 20:29:02,307] INFO in __init__: Microblog startup
+Microblog startup
+Usage: flask translate [OPTIONS] COMMAND [ARGS]...
+Try 'flask translate --help' for help.
+
+Error: No such command 'compile'.
+
+(venv) E:\microblog\venv>
+____________________________________________________________________________________
+Microsoft Windows [Version 10.0.18362.900]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\Aditya>color a
+
+C:\Users\Aditya>E:
+
+E:\>cd microblog
+
+E:\microblog>venv\Scripts\activate
+
+(venv) E:\microblog>cd venv
+
+(venv) E:\microblog\venv>dir
+ Volume in drive E is kali
+ Volume Serial Number is 82B7-F9B3
+
+ Directory of E:\microblog\venv
+
+27-04-2021  17:16    <DIR>          .
+27-04-2021  17:16    <DIR>          ..
+27-04-2021  20:28    <DIR>          app
+27-04-2021  16:09            36,864 app.db
+25-04-2021  23:47               105 babel.cfg
+27-04-2021  17:16               954 config.py
+21-04-2021  14:33    <DIR>          Include
+19-04-2021  19:13    <DIR>          Lib
+25-04-2021  17:27    <DIR>          logs
+26-04-2021  01:16               223 microblog.py
+27-04-2021  17:04    <DIR>          microblogs
+21-04-2021  16:55    <DIR>          migrations
+19-04-2021  19:13                82 pyvenv.cfg
+26-04-2021  00:26               705 requirements.txt
+25-04-2021  23:48    <DIR>          Scripts
+26-04-2021  01:17             3,642 tests.py
+27-04-2021  20:26    <DIR>          __pycache__
+               7 File(s)         42,575 bytes
+              10 Dir(s)  28,183,142,400 bytes free
+
+(venv) E:\microblog\venv>set FLASK_APP=microblog.py
+
+(venv) E:\microblog\venv>flask run
+ * Serving Flask app "microblog.py"
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+[2021-04-28 12:41:12,694] INFO in __init__: Microblog startup
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [28/Apr/2021 12:41:28] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [28/Apr/2021 12:41:28] "[37mGET /auth/login?next=%2F HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Apr/2021 12:41:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [28/Apr/2021 12:41:32] "[32mGET /index HTTP/1.1[0m" 302 -
+127.0.0.1 - - [28/Apr/2021 12:41:32] "[37mGET /auth/login?next=%2Findex HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Apr/2021 12:41:39] "[32mGET /explore HTTP/1.1[0m" 302 -
+127.0.0.1 - - [28/Apr/2021 12:41:39] "[37mGET /auth/login?next=%2Fexplore HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Apr/2021 12:41:44] "[37mGET /auth/register HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Apr/2021 12:41:49] "[32mGET /index HTTP/1.1[0m" 302 -
+127.0.0.1 - - [28/Apr/2021 12:41:49] "[37mGET /auth/login?next=%2Findex HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Apr/2021 12:41:51] "[37mGET /auth/login HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Apr/2021 12:42:02] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [28/Apr/2021 12:42:02] "[37mGET /index HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Apr/2021 12:42:07] "[37mGET /explore HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Apr/2021 12:42:21] "[37mGET /user/susan HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Apr/2021 12:42:26] "[37mGET /index HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Apr/2021 12:42:29] "[37mGET /explore HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Apr/2021 12:42:31] "[37mGET /index HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Apr/2021 12:42:46] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [28/Apr/2021 12:42:46] "[32mGET /index HTTP/1.1[0m" 302 -
+127.0.0.1 - - [28/Apr/2021 12:42:46] "[37mGET /auth/login?next=%2Findex HTTP/1.1[0m" 200 -
+
+(venv) E:\microblog\venv>heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/65b5c1eb-210f-4aab-a8ac-a7798b3a54af?requestor=SFMyNTY.g2gDbQAAAA4xODMuODIuMTUzLjEzMW4GAO13VBd5AWIAAVGA.2Lwbn5XooqUmNPDtXkVc391Ae_KMXUYFBUi2gbqzTrM
+Logging in... done
+Logged in as adityanissankula@gmail.com
+
+(venv) E:\microblog\venv>get SERACHBOX_URL
+'get' is not recognized as an internal or external command,
+operable program or batch file.
+
+(venv) E:\microblog\venv>heroku config:get SEARCHBOX_URL
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+ »   See more help with --help
+
+(venv) E:\microblog\venv>get SEARCHBOX_URL
+'get' is not recognized as an internal or external command,
+operable program or batch file.
+
+(venv) E:\microblog\venv>

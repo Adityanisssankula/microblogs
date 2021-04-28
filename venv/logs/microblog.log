@@ -30,3 +30,6 @@ AttributeError: 'str' object has no attribute 'decode'
 2021-04-25 22:11:56,484 INFO: Microblog startup [in E:\microblog\venv\app\__init__.py:54]
 2021-04-25 22:12:18,387 INFO: Microblog startup [in E:\microblog\venv\app\__init__.py:54]
 2021-04-26 01:17:30,747 INFO: Microblog startup [in E:\microblog\venv\app\__init__.py:77]
+2021-04-27 13:46:10,094 INFO: Microblog startup [in E:\microblog\venv\app\__init__.py:77]
+2021-04-27 16:08:40,068 INFO: Microblog startup [in E:\microblog\venv\app\__init__.py:77]
+2021-04-28 12:41:12,694 INFO: Microblog startup [in E:\microblog\venv\app\__init__.py:82]
